@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.write("<p>金字塔</p>")
 let level = prompt('请设置金字塔的层数')
 level = parseFloat(level)&&Number(level)
@@ -30,3 +31,6 @@ for(let i=1;i<10;++i){
 str += '</table>'
 //设置div的html文档内容
 document.getElementById('table').innerHTML = str
+=======
+  
+>>>>>>> 70801b5fdd9b50e74c59e0dbddf74ea2d5b1f4c5
