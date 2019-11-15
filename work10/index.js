@@ -28,7 +28,8 @@ function monkey() {
     logs.push(monkey.concat(), -1, -1)
     logValues = logs.values()
     showDiv = document.getElementById("result")
-    setTimeout("showLog()", 50)
+    //setTimeout("showLog()", 50)
+    document.getElementById('monkeyking').innerHTML=monkey[0]
 }
 
 function showLog() {
