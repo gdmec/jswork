@@ -8,7 +8,7 @@ function calendar(y) {
     // 拼接每个月份的表格
     for (var m = 1; m <= 12; ++m) {
         html += '<table>';
-        html += '<tr class="title"><th colspan="7">' + y + ' 年 ' + m + ' 月</th></tr>';
+        html += '<tr class="title"><th colspan="7">' + y + '年' + m + '月</th></tr>';
         html += '<tr><td>日</td><td>一</td><td>二</td><td>三</td><td>四</td><td>五</td><td>六</td></tr>';
 
         // 获取月份m共有多少天
