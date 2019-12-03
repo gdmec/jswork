@@ -62,3 +62,6 @@ function stat() {
     document.getElementById('result').innerText = JSON.stringify(obj)
 }
 
+window.open('', 'newWin', 'left=200', false);
+
+location.ref = 

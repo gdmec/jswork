@@ -1,0 +1,46 @@
+<form id="form" action="/formBuilder" method="post">
+    <table>
+        <tbody>
+            <tr>
+                <th>姓　　名：</th>
+                <td><input type="text" name="user"></td>
+            </tr>
+            <tr>
+                <th>学　　号：</th>
+                <td><input type="text" name="sid"></td>
+            </tr>
+            <tr>
+                <th>班　　级：</th>
+                <td><input type="text" name="classid"></td>
+            </tr>
+            <tr>
+                <th>性　　别：</th>
+                <td><label><input type="radio" name="gender" value="m">男</label><label><input type="radio" name="gender"
+                            value="w">女</label></td>
+            </tr>
+            <tr>
+                <th>爱　　好：</th>
+                <td><label><input type="checkbox" name="hobby[]" value="swimming">游泳</label><label><input
+                            type="checkbox" name="hobby[]" value="reading">读书</label><label><input type="checkbox"
+                            name="hobby[]" value="running">跑步</label></td>
+            </tr>
+            <tr>
+                <th>住　　址：</th>
+                <td><select name="area">
+                        <option value="">--请选择--</option>
+                        <option value="bj">北京</option>
+                        <option value="sh">上海</option>
+                        <option value="sz">深圳</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th>自我介绍：</th>
+                <td><textarea name="introduce" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="提交"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
