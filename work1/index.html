@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>崔宇的第一个网页</title>
+    <style>
+        .p1 {
+            font-size: 16px;
+        }
+
+        .p2 {
+            background-color: aquamarine;
+        }
+
+        .p3 {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
+    <p class="p1 p2 p3" id="a" contextmenu="test" data-p="noting" name="p1">
+        this is a p element.
+    </p>
+    <p id="b" onclick="kk()">
+        nothing
+    </p>
     <input id="aa" value="1000">
     <script>
         document.write('ppppp')
     </script>
     <script>
         document.write('hihi')
-        alert
-        ('asdfasdfasd')
+        document.getElementById('a').onclick = function mm() {
+            console.log(this)
+        }
+
+        function kk() {
+            console.log(this)
+        }
+        var nav = document.querySelector('#id'); // <nav>
+        var toggleNav = function () {
+            console.log(this); // this = <nav> element
+        };
+        nav.addEventListener('click', toggleNav, false);
     </script>
-  
+
 
     <p style="font-size:80px" onclick="javascript:alert('别摸我');">BMW</p>
-    <p onc  lick="javascript:document.write('adsfasdf');">document.write</p>
+    <p onc lick="javascript:document.write('adsfasdf');">document.write</p>
 </body>
 <script src="test2.js"></script>
+
 </html>
